@@ -12,10 +12,37 @@
 
 .column {
     flex: 3;
-    background: yellow;
 }
 
 .column:nth-child(2) {
     flex: 4;
     background: pink;
+}
+
+.panel {
+    border: 12px solid yellow;
+    border-image-source: url('../image/border.png');
+    border-image-slice: 51 38 20 132;
+    border-image-width: .51rem .38rem .2rem 1.32rem;
+    border-image-repeat: repeat;
+}
+
+.overview ul {
+    display: flex;
+}
+
+.overview ul li {
+    flex: 1;
+    text-align: left;
+    align-items: center;
+}
+
+.overview ul li h3 {
+    font-size: 0.35rem;
+    color: #fff;
+}
+
+.overview ul li span {
+    font-size: 0.2rem;
+    color: #4c9bfd;
 }

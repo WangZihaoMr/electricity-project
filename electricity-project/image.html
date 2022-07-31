@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>切割image</title>
+  <style>
+    .wrapper {
+      width: 700px;
+      height: 200px;
+      /**
+        border-image:url('./image/border.jpg');   必须设置border属性才有效
+      **/
+      border: 15px solid yellow;
+      /*border-image: url('./image/border.jpg');*/
+      border-image-source: url('./image/border.png');
+      border-image-width: 120px;
+      border-image-repeat: repeat;
+      /*background-color: pink;*/
+      margin: 100px auto;
+      border-image-slice: 64 66 57 134;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper"></div>
+</body>
+
+</html>
